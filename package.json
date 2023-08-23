@@ -1,0 +1,47 @@
+{
+  "name": "tensei-ui-kit",
+  "version": "1.0.0PRE-",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": "git+https://github.com/webtensei/tensei-ui-kit.git",
+  "keywords": [
+    "UI",
+    "Library",
+    "React",
+    "Typescript",
+    "Storybook"
+  ],
+  "author": "Kravtsov Vadim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webtensei/tensei-ui-kit/issues"
+  },
+  "homepage": "https://github.com/webtensei/tensei-ui-kit#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@rollup/plugin-url": "^8.0.1",
+    "@svgr/rollup": "^8.1.0",
+    "@types/react": "^18.2.20",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-standard-with-typescript": "^38.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "^8.4.28",
+    "rollup": "^3.28.0",
+    "rollup-plugin-dts": "^6.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.66.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
