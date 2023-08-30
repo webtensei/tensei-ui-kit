@@ -1,8 +1,16 @@
 {
-  "name": "tensei-ui-kit",
-  "version": "1.0.0PRE-",
+  "name": "@webtensei/tensei-ui-kit",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/webtensei"
+  },
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/esm/index.js",
+  "module": "dist/cjs/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c"
   },

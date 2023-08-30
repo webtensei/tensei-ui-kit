@@ -6,16 +6,17 @@ const url = require('@rollup/plugin-url')
 const svgr = require('@svgr/rollup')
 const terser = require('@rollup/plugin-terser')
 const dts = require('rollup-plugin-dts')
+const packageJson = require('./package.json')
 module.exports = [
   {
     input: 'src/index.ts',
     output: [
       {
-        file: 'dist/cjs/index.js',
+        file: packageJson.module,
         format: 'cjs'
       },
       {
-        file: 'dist/esm/index.js',
+        file: packageJson.main,
         format: 'esm'
       }
     ],
@@ -41,7 +42,7 @@ module.exports = [
   },
   {
     input: 'dist/esm/types/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+    output: [{ file: packageJson.types, format: 'esm' }],
     external: [/\.(css|scss)$/],
     plugins: [dts.default()]
   }
